@@ -1,0 +1,51 @@
+.Dropdown {
+  .selectedOptions {
+    all: unset;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    max-width: 250px;
+    justify-content: start;
+    align-items: center;
+    margin: 8px 0;
+
+    .chip {
+      span {
+        max-width: 80px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 16px;
+      padding: 4px 8px;
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #e0e0e0;
+      }
+
+      .remove {
+        margin-left: 8px;
+        font-size: 14px;
+        color: #999;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+          color: #666;
+          scale: 1.1;
+        }
+      }
+    }
+  }
+
+  .wrapper {
+    display: inline-block;
+  }
+}
